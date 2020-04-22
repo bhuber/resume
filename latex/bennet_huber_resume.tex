@@ -5,7 +5,8 @@
 \usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 \usepackage{newcent}   % uses new century schoolbook postscript font 
 \usepackage{verbatim}
-\setlength{\textheight}{9.5in} % increase text height to fit on 1-page 
+\usepackage[letterpaper,left=0.5in,right=01in,top=0.5in,bottom=0.5in]{geometry}
+%\setlength{\textheight}{10in} % increase text height to fit on 1-page
 
 \begin{document} 
 
@@ -14,13 +15,12 @@
 
 \vspace{-24pt}
 \address{bennet.huber@gmail.com\\(215) 490-4297}
-\address{739 S 20th St, Suite 2\\Philadelphia, PA 19146}
+\address{1219 NW Richmond Beach Rd\\Shoreline, WA 98177}
 
 \begin{resume}
 
 \section{Job Objective}
-    To work as a backend software developer specializing in algorithm development, optimization,
-    and parallel/distributed computing.
+    To work as a lead engineer helping my team solve challenging and exciting problems.
  
 \section{Education}
     The Pennsylvania State University - May 2010\\
@@ -28,9 +28,21 @@
     GPA 3.55, Dean's list 7/8 semesters
  
 \section{Experience}
-   \vspace{-0.1in}	
+   \vspace{-0.1in}
+   \begin{tabbing}%
+   \hspace{2.2in}\= \hspace{2.2in}\= \kill % set up two tab positions
+   {\bf SDE II}  \> Amazon Inc\> April 2016 - Present\\
+                          \> Seattle, WA
+   \end{tabbing}\vspace{-17pt}
+   Datapath is a serverless execution platform and language designed for high throughput, low latency execution of business logic defined in an SOA architecture across hundreds of development teams.  It powers a significant portion of the real-time backend business logic for amazon.com traffic.  I've worked on most of the pieces over the years, but much of my recent work has focused on evolving the deployment system to scale from dozens of customer deployments/day five years ago to thousands currently.  My current project is adding the concept of a "onebox" to the deployment system and runtime to enable multi-step production deployments for our customers, helping reduce the blast radius of bad changes.
+   \begin{tabbing}%
+   \hspace{2.2in}\= \hspace{2.2in}\= \kill % set up two tab positions
+   {\bf SDE I}  \> Amazon Inc\> August 2014 - April 2016\\
+                          \> Seattle, WA
+   \end{tabbing}\vspace{-17pt}
+   Featured Merchant Algorithm (FMA) Team - owns the logic that picks which merchant offer is tied to Amazon's "Add to Cart" button. It is a low latency, high throughput system - its logic is invoked millions of times per second worldwide with latency on the order of 10s of milliseconds.  While on FMA I developed a shadow traffic automated testing mechanism to reduce developer time to run integration tests from several hours to a few minutes.  I also wrote and implemented a new version of their public API, still in use nearly five years later.
    \begin{tabbing}
-   \hspace{2.0in}\= \hspace{2.2in}\= \kill % set up two tab positions
+   \hspace{2.2in}\= \hspace{2.2in}\= \kill % set up two tab positions
    % \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
     {\bf Software Developer} \>Azavea Inc     \>December 2010 - April 2014\\
                              \>Philadelphia, PA
@@ -45,19 +57,8 @@
    worked on is called HunchLab, a product designed for crime analysts that
    implements many cutting-edge crime prediction algorithms and statistical
    models.
-   \begin{tabbing}
-   \hspace{2.0in}\= \hspace{2.2in}\= \kill % set up two tab positions
-   {\bf Grader} \> Penn State CSE Department\> Spring 2010\\
-                          \>State College, PA
-   \end{tabbing}\vspace{-17pt}
-   Grader for Introduction to Computational Theory (algorithm analysis,
-   Turing Machines, complexity classes, etc).
-   Responsibilities included grading weekly homework assignments for a
-   class of 60 (approximately 10 hours/week).
-   This course was considered one of the hardest requirements for the CS program.
-
    \begin{tabbing}%
-   \hspace{2.0in}\= \hspace{2.2in}\= \kill % set up two tab positions
+   \hspace{2.2in}\= \hspace{2.2in}\= \kill % set up two tab positions
    {\bf Intern}  \> Cisco Systems\> Summers 2007 and 2008\\
                           \> San Jose, CA
    \end{tabbing}\vspace{-17pt}
@@ -65,21 +66,12 @@
 
 
 \section{Relevant Skills}
-Proficient in C\#/.NET framework, Python, JavaScript, C/C++, Django Framework,
-Git/Github, Jenkins CI server administration, SQL (PostGreSQL and MSSQL), 
-and common Windows/Linux administration tasks.\\
-Familiar with Scala, Java, Objective-C/iOS programming, Perl, Scheme, Bash, HTML, CSS,
-web visualization, JQuery, Dojo, Angular-JS, Leaflet, algorithm development
-and analysis, microprocessor architecture, GIS, Spatial Analysis,
-VirtualBox, Vagrant, Ansible, AWS, Nginx, Subversion, TravisCI,
-and many other less relevant technologies.
+Proficient in Java development, designing and maintaining highly available distributed systems, microservices/SOA architectures, and mentoring junior engineers.  I've worked on a large variety of platforms and technologies, including C#/.NET, Python, AWS, Javascript, IOS/Android, and too many others to list.
  
 \section{Activities and Awards}          
     Recipient of the Lockheed Martin Engineering Scholars Award\\
-    Active member of the Philadelphia Python User Group\\
-    Occasional instructor for Girl Develop It Philly\\
+    Past instructor for Girl Develop It Philly\\
     Too many local hackathons to enumerate\\
-    Member of the International Thespian Society\\
     Bicycled across America, Summer 2009
 
 \section{References}
